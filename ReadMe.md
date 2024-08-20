@@ -1,4 +1,4 @@
-#Disclaimer
+# Disclaimer
 This code is a proof of concept and part of an ongoing work. It is provided for reproducing the results of a published paper.
 __This code is NOT intented for production use__
 
@@ -11,6 +11,7 @@ This work has been supported by the ANR (French researchagency "Agence Nationale
 
 # Code structure
 The repository is stuctured as follows:
+
 __src__: Contains the code of the methods to format the data, extract FCUs and display the results.
 
 __scripts__: Contains the scripts to generate simulation data and to optimize model hyperparameters.
@@ -24,15 +25,22 @@ __data__: the data used in the experiments.
 In the code, we used the following naming convention for variable presented in the paper:
 
 R: Number of ROIs (regions of interest)
+
 E: Number of Pairs of ROIs ($R2 = \frac{R(R-1)}{2}$)
+
 T: Time (or window index)
+
 P: Number of FCUs (Functional Connectivity Units)
 
 
 $\mathbf{TC}$ R x T Time courses of the R ROIs
+
 $\mathbf{C}$ R x R correlation matrix
+
 $\mathbf{Cvec}$ E x T list of vectorized correlation matrices of successive windows
+
 $\mathbf{D}$ E x P Dictionary of FCUs 
+
 $\mathbf{A}$ P x T matrix of activation of the FCUs in time
 
 
